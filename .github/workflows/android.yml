@@ -19,17 +19,21 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    # Устанавливаем сам Gradle в систему, так как в репозитории его нет
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v4
 
-    # Генерируем файлы gradlew и папку gradle/wrapper
     - name: Initialize Gradle Wrapper
       run: gradle wrapper
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
+    # НАЧАЛО НОВОГО ШАГА: Генерируем debug.keystore, который требует проект
+    - name: Create debug keystore
+      run: |
+        keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+
     - name: Build with Gradle
       run: ./gradlew assembleDebug
+      
       
