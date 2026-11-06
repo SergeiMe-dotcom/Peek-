@@ -1,0 +1,6 @@
+{
+  "name": "PEEK",
+  "description": "A 2.5D physics platformer starring The Cube across 20 hand-crafted levels with pendulum rope swinging, wall-clinging, and a customizable landscape HUD.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

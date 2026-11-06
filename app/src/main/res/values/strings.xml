@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PEEK</string>
+    <string name="menu_play">PLAY</string>
+    <string name="menu_level_select">LEVEL SELECT</string>
+    <string name="menu_hud_customizer">HUD LAYOUT</string>
+    <string name="menu_settings">SETTINGS</string>
+    <string name="hud_jump">JUMP</string>
+    <string name="hud_grab">GRAB</string>
+    <string name="hud_pause">Pause Game</string>
+    <string name="dialog_paused">GAME PAUSED</string>
+    <string name="dialog_level_clear">STAGE CLEARED</string>
+    <string name="dialog_game_over">CUBE SHATTERED</string>
+    <string name="action_resume">RESUME</string>
+    <string name="action_retry">RETRY</string>
+    <string name="action_next_level">NEXT STAGE</string>
+    <string name="action_main_menu">MAIN MENU</string>
+    <string name="action_save_hud">SAVE HUD</string>
+    <string name="action_reset_hud">RESET DEFAULT</string>
+</resources>
